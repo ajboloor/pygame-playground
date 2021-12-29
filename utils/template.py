@@ -1,4 +1,5 @@
 # Pygame template - skeleton for a new pygame project
+# template.py
 import pygame
 import random
 
