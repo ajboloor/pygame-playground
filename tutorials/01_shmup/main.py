@@ -90,6 +90,11 @@ while running:
     # Update
     all_sprites.update()
 
+    #check to see if a mob hit the player
+    hits = pygame.sprite.spritecollide(player, mobs, False)
+    if hits:
+        running = False
+        
     # Draw / render
     screen.fill(BLACK)
     all_sprites.draw(screen)    
